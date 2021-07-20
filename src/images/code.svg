@@ -1,0 +1,19 @@
+<svg id="code" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #53a665;
+      }
+    </style>
+  </defs>
+  <path id="Code-2" data-name="Code" class="cls-1" d="M941.6,561H922.4a2.4,2.4,0,0,1-2.4-2.4V539.4a2.4,2.4,0,0,1,2.4-2.4h19.2a2.4,2.4,0,0,1,2.4,2.4v19.2A2.4,2.4,0,0,1,941.6,561Zm0-16.8a2.4,2.4,0,0,0-2.4-2.4H924.8a2.4,2.4,0,0,0-2.4,2.4v12a2.4,2.4,0,0,0,2.4,2.4h14.4a2.4,2.4,0,0,0,2.4-2.4v-12Z" transform="translate(-920 -537)"/>
+  <path id="Code_copy" data-name="Code copy" class="cls-2" d="M926.351,551.246l-1.622-1.623,1.936-1.936-1.936-1.936,1.622-1.622,3.245,3.244,0.211,0.314L929.6,548Z" transform="translate(-920 -537)"/>
+</svg>

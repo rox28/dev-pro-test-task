@@ -1,0 +1,329 @@
+html {
+    font-size: 14px;
+    font-family: $font-body;
+    color: $secondary;
+    background: url('../images/pattern@2x.png') repeat 0 0 / 5px 5px;
+}
+h2 {
+    font-size: 1.5rem;
+    font-family: $font-tl;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+    &.has-bg {
+        font-size: 1.143rem;
+        color: $black;
+        span {
+            background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)) repeat-x;
+            background-size: 100% 1em;
+            background-position: 0 0.25em;
+        }
+    }
+}
+p {
+    margin: 0;
+}
+header {
+    position: relative;
+    padding-top: 8px;
+    margin-bottom: 1.5rem;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 34px;
+        background-color: rgba(255, 255, 255, 0.73);
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+.logo {
+    width: 94px;
+    display: block;
+    margin-bottom: 30px;
+    img {
+        width: 100%;
+    }
+}
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a {
+        display: block;
+        font-size: 16px;
+        font-family: $font-tl;
+        color: $secondary;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.2s ease;
+        border-bottom: 3px solid $secondary;
+        padding: 2px 0;
+        &:active {
+            color: darken($tertiary, 10%);
+            border-color: darken($tertiary, 10%);
+        }
+        &.active {
+            color: $primary;
+            position: relative;
+            border-color: $primary;
+        }
+    }
+}
+.striped {
+    position: relative;
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+.stripes {
+    &,
+    &:before,
+    &:after {
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        background: url('../images/pattern-d@2x.png') repeat 0 0 / 5px 5px;
+    }
+    &:before {
+        content: "";
+        top: 149px;
+    }
+    &:after {
+        content: "";
+        top: 299px;
+    }
+}
+.link {
+    display: inline-flex;
+    &-primary {
+        @extend .link;
+        padding: 1px 3px 3px;
+        text-decoration: none;
+        color: $white;
+        line-height: 1;
+        background-color: $primary;
+        &--pos {
+            @extend .link-primary;
+            position: absolute;
+            top: 88%;
+            right: -10px;
+            white-space: nowrap;
+        }
+        &:hover {
+            background-color: darken($primary, 5%);
+        }
+        &:active {
+            background-color: darken($primary, 10%);
+        }
+    }
+    &-secondary {
+        @extend .link;
+        color: $primary;
+        &:hover {
+            text-decoration: none;
+        }
+        &:active {
+            color: darken($primary, 10%);
+        }
+    }
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    background: {
+        repeat: no-repeat;
+        position: 50% 50%;
+        size: contain;
+    };
+    &--pie {
+        @extend .icon;
+        background-image: url('../images/pie.svg');
+    }
+    &--lab {
+        @extend .icon;
+        width: 30px;
+        height: 30px;
+        background-image: url('../images/lab.svg');
+        @media screen and (min-width: 960px) {
+            margin-top: -6px;
+        }
+    }
+    &--code {
+        @extend .icon;
+        background-image: url('../images/code.svg');
+    }
+}
+.video {    
+    &-container {
+        height: 145px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .logo {
+            width: 75px;
+            margin: 0 auto 3px;
+        }
+        video {
+            width: 100%;
+        }
+    }
+    &-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 1rem;
+        font-size: 12px;
+        text-align: center;
+        pointer-events: none;
+    }
+}
+footer {
+    .container {
+        position: relative;
+        &:before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            border-top: 1px solid #cccccc;
+            background: $white;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .soc {
+        width: 24px;
+        height: 24px;
+        margin: 0 7px;
+        svg {
+            width: 100%;
+            fill: $secondary;
+            transition: 0.2s ease;
+        }
+        &:active {
+            svg {
+                fill: darken($tertiary, 10%);
+            }
+        }
+    }
+    .copyright {
+        font-size: 10px;
+        color: $tertiary;
+    }
+}
+
+
+
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+    h2 {
+        &.has-bg {
+            font-size: 1.5rem;
+            color: $primary;
+        }
+    }
+    header {
+        padding: 0;
+        margin-bottom: 3rem;
+        &:before {
+            height: 100%;
+        }
+    }
+    .logo {
+        width: 130px;
+        margin: 0 auto 10px;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            display: flex;
+            align-items: center;
+            &:not(:first-child):before {
+                content: "/";
+                color: $secondary;
+                padding: 0 10px;
+            }
+        }
+        a {
+            border: none;
+            &.active {
+                cursor: default;
+                &:before {
+                    content: "";
+                    width: 15px;
+                    height: 5px;
+                    background: url('../images/arrow.svg') repeat;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    .video {
+        &-container {
+            height: 240px;
+
+            .logo {
+                width: 130px;
+                margin-bottom: 5px;
+            }
+        }
+        &-text {
+            font-size: 1rem;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 960px) {
+    .container {
+        max-width: 960px;
+    }
+    header {
+        margin-bottom: 1.5rem;
+    }
+    .logo {
+        margin-bottom: 0;
+    }
+    .nav {
+        justify-content: flex-end;
+        a {
+            &:not(.active):hover {
+                color: $tertiary;
+            }
+        }
+    }
+    footer {
+        .soc {
+            margin: 0 0 0 15px;
+            &:hover {
+                svg {
+                    fill: $tertiary;
+                }
+            }
+        }
+    }
+}

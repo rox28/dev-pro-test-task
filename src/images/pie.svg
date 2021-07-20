@@ -1,0 +1,19 @@
+<svg id="pie" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #53a665;
+      }
+    </style>
+  </defs>
+  <path id="Pie_Chart" data-name="Pie Chart" class="cls-1" d="M286.8,561a10.771,10.771,0,0,1-1.2-21.479V551.4h11.879A10.763,10.763,0,0,1,286.8,561Z" transform="translate(-276 -537)"/>
+  <path id="Pie_Chart_copy" data-name="Pie Chart copy" class="cls-2" d="M299.879,549H290.4a2.4,2.4,0,0,1-2.4-2.4v-9.479a10.555,10.555,0,0,1,1.2-.121A10.8,10.8,0,0,1,300,547.8,10.555,10.555,0,0,1,299.879,549Z" transform="translate(-276 -537)"/>
+</svg>
