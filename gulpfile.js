@@ -57,6 +57,7 @@ function watch() {
       }
   });
   gulp.watch('./src/styles/*.scss', styles); 
+  gulp.watch('./src/styles/bs/*.scss', styles);
   gulp.watch("./*.html").on('change', browserSync.reload);
   gulp.watch('./src/fonts/*', fonts);
   gulp.watch('./src/images/*', images);
